@@ -13,6 +13,7 @@
     --primary-color: #FD8F5C;
     --white: #ffffff;
     --black: #000000;
+    --red: #D93148
 }
 img{
     width: 100%;
@@ -44,7 +45,7 @@ nav{
     font-weight: 600;
 }
 .logo span span{
-    color: #eb2e2e;
+    color: var(--red);
 }
 .navLinks ul{
     display: flex;
@@ -59,8 +60,8 @@ nav{
 .banner{
     width: 100%;
     height: 100vh;
-    background:linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/IMG_2.jpg') no-repeat;
-    background-size: cover;
+    /* background:linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/IMG_2.jpg') no-repeat;
+    background-size: cover; */
 }
 .banner_content{
     display: flex;
@@ -71,6 +72,79 @@ nav{
     padding: 25px 4%;
    
 }
+/* Swiper Js */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .banner_1{
+    background:linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/IMG_2.jpg') no-repeat;
+    background-size: cover;
+}
+.banner_2{
+    background:linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/recycle_img.jpg') no-repeat;
+    background-size: cover;
+    }
+.banner_3{
+    background:linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/tech_img.jpg') no-repeat;
+    background-size: cover;
+}
+/* .banner_1,.banner_2, .banner_3 {
+	-webkit-animation: kenburns-top 5s ease-in-out infinite alternate both;
+	        animation: kenburns-top 5s ease-in-out infinite alternate both;
+}
+@-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  } */
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 .banner_content div{
     width: 500px;
     height: 450px;
@@ -106,6 +180,39 @@ nav{
     width: 100%;
     padding: 24px 4%;
 }
-.service h3{
+.service h2{
     text-align: center;
+}
+.service h2 span{
+    color: var(--red);
+}
+.service_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.service_box_l, .service_box_r{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+}
+.service_box_l p{
+    font-size: 15px;
+}
+.service_box_l i{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.service_box_r i{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.service_icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
 }

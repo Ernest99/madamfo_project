@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="./assets/madamfo_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+     <!-- typedjs cdn -->
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -31,9 +35,13 @@
             </div>
         </nav>
         <div class="banner">
+             <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide banner_1">
             <div class="banner_content">
                 <div>
-                    <h1>OVER MORE THAN 450+ PROJECTS WORLDWIDE</h1>
+                    <h1>OVER MORE THAN 450+ PROJECTS WORLDWIDE IN <span class="type"></span></h1>
                     <h3>Madamfo Africa</h3>
                     <div class="banner_btn">
                         <a href="/">Find Out More</a>
@@ -41,15 +49,131 @@
                     </div>
                 </div>
             </div>
+          </div>
+          <div class="swiper-slide banner_2">
+            <div class="banner_content">
+                <div>
+                    <h1>OVER MORE THAN 450+ PROJECTS WORLDWIDE IN <span class="type"></span></h1>
+                    <h3>Madamfo Africa</h3>
+                    <div class="banner_btn">
+                        <a href="/">Find Out More</a>
+                        <a href="/">Get Started</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-slide banner_3">
+            <div class="banner_content">
+                <div>
+                    <h1>OVER MORE THAN 450+ PROJECTS WORLDWIDE IN <span class="type"></span></h1>
+                    <h3>Madamfo Africa</h3>
+                    <div class="banner_btn">
+                        <a href="/">Find Out More</a>
+                        <a href="/">Get Started</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div> -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+            
+            
         </div>
     </header>
     <section class="service" id="service">
-        <h3><span>Madamfo</span> Services</h3>
+        <h2><span>Madamfo</span> Services</h2>
+        <div class="service_content">
+            <div class="col-l">
+                <div class="service_box_l">
+                    <div>
+                        <h3>Recycling</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    </div>
+                   <div class="service_icon">
+                    <i class="bi bi-recycle"></i>
+                   </div>
+                </div>
+                <div class="service_box_l">
+                    <div>
+                        <h3>Health</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    </div>
+                    <div class="service_icon">
+                        <i class="bi bi-heart-pulse"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-m">
+                <img src="./assets/madamfo_logo.png" alt="">
+            </div>
+            <div class="col-r">
+                <div class="service_box_r">
+                    <div class="service_icon">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+                    <div>
+                        <h3>Innovation</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    </div>
+                    
+                </div>
+                <div class="service_box_r">
+                    <div class="service_icon">
+                        <i class="bi bi-megaphone"></i>
+                    </div>
+                    <div>
+                        <h3>Advocacy</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product" id="product">
+        
     </section>
 
 
 
 
     <script src="./index.js"></script>
+    <script src="typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var typed = new Typed(".type", {
+            strings: ["RECYCLING", "INNOVATION", "HEALTH", "ADVOCACY"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+        var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        speed: 600,
+        //centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+            pagination: {
+              el: ".swiper-pagination",
+              dynamicBullets: true,
+              clickable: true,
+              
+            },
+            navigation: {
+                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-button-next',
+              },
+          });
+    </script>
 </body>
 </html>
