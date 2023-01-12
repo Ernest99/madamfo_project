@@ -41,6 +41,9 @@ nav{
     justify-content: center;
     gap: 10px;
 }
+.madamfo{
+    color: var(--blue);
+}
 .logo a img{
     width: 65px;
 }
@@ -60,11 +63,24 @@ nav{
 .navLinks ul li a{
     color: var(--green);
     font-size: 15px;
-    transition: 500ms ease;
+    transition: 500ms ease;   
+    font-weight: 500;                          
 }
 .navLinks ul li a:hover{
     color: var(--red);
     transition: 500ms ease;
+}
+#menu_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    display: none;
+}
+#menu_icon i{
+    font-size: 25px;
+    font-weight: 600;
 }
 .banner{
     width: 100%;
@@ -335,5 +351,35 @@ max-width: 100%;
 @media (max-width: 965px){
     .product_item{
         width: 100%;
+    }
+    .madamfo{
+        display: none;
+    }
+    #menu_icon{
+        display: block;
+    }
+    .navLinks{
+        position: absolute;
+        top: -100%;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        transition: all 500ms ease;
+    }
+    .navLinks ul{
+        display: block;
+        background: var(--white);
+        width: 100%;
+    }
+    .navLinks ul li{
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+    .navLinks ul li a{
+        font-size: 18px;
+    }
+    .show_menu{
+        top: 12%;
+        transition: all 500ms ease;
     }
 }
