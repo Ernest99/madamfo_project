@@ -13,7 +13,11 @@
     --primary-color: #FD8F5C;
     --white: #ffffff;
     --black: #000000;
-    --red: #D93148
+    --red: #E9453A;
+    --blue: #254FA0;
+    --green: #049645;
+    --yellow: #FDC40C;
+    --light-green: #2AAC48;
 }
 img{
     width: 100%;
@@ -178,12 +182,18 @@ nav{
 /* Services */
 .service{
     width: 100%;
+    height: 100vh;
     padding: 24px 4%;
+    background:linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8)), url('./assets/p2.jpeg');
+    background-position: center;
+    background-size: cover;
 }
 .service h2{
     text-align: center;
     font-size: 2rem;
     padding-bottom: 15px;
+    margin-top: 18px;
+    margin-bottom: 20px;
 }
 .service h2 span{
     color: var(--red);
@@ -279,7 +289,27 @@ max-width: 100%;
     font-weight: 500;
     font-size: 13px;
 }
+.product_item a{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: 20px auto;
+    
+}
+.product_item a .product_item_btn{
+    background: var(--red);
+    width: 80%;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    color: var(--white);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
 
+}
 
 @media (max-width: 965px){
     .product_item{
