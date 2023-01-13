@@ -253,6 +253,9 @@ nav{
     text-align: center;
     color: var(--white);
 }
+/* .service_box_r div:nth-child(2){
+    margin-left: 15px;
+} */
 .service_icon{
     width: 60px;
     height: 60px;
@@ -289,7 +292,7 @@ max-width: 100%;
     padding: 24px 4%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
-    gap: 10px;
+    gap: 20px;
 }
 .product_item{
     width: 280px;
@@ -305,6 +308,10 @@ max-width: 100%;
 }
 .product_item img{
     object-fit: cover;
+}
+.product_item:hover img{
+    opacity: .6;
+    transition: all 0.5s ease;
 }
 .product_detail{
     display: flex;
@@ -347,6 +354,70 @@ max-width: 100%;
     font-weight: 600;
 
 }
+.custom_kit{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/first_aid.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-top: 20px;
+    padding: 2% 4%;
+
+}
+/* custom kit */
+.custom_title h1{
+    font-size: 2.8rem;
+    color: var(--white);
+}
+.custom_title p{
+    margin-top: 10px;
+    color: var(--white);
+}
+.custom_form{
+    width: 80%;
+    height: max-content;
+    background: var(--white);
+    padding: 20px;
+}
+.form_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.form_img img{
+    width: 150px;
+}
+.input_first{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 10px 0;
+    
+}
+.input_first input{
+    width: 100%;
+    padding: 10px 15px;
+}
+.input_sec input{
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.custom_btn button{
+ width: 100%;
+ padding: 10px 15px;
+ background: var(--red);
+ color: var(--white);
+ font-weight: 600;
+ border-radius: 30px;
+ outline: none;
+ border: none;
+}
 /* Media Queries */
 @media (max-width: 965px){
     .product_item{
@@ -381,5 +452,11 @@ max-width: 100%;
     .show_menu{
         top: 12%;
         transition: all 500ms ease;
+    }
+    .custom_form{
+        width: 100%;
+    }
+    .custom_title h1{
+        font-size: 2rem;
     }
 }
