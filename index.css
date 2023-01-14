@@ -221,6 +221,7 @@ nav{
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/env_2.jpg');
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .about_container{
     display: grid;
