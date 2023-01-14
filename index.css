@@ -34,6 +34,7 @@ nav{
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     background: #1a1a1a;
+    z-index: 10;
 }
 .logo{
     display: flex;
