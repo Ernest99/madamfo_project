@@ -187,6 +187,7 @@ nav{
     font-size: 2rem;
     color: #fff;
     padding: 20px;
+    text-transform: uppercase;
 }
 .banner_btn{
     margin-top: 18px;
