@@ -33,7 +33,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    background: #1a1a1a;
+    background: #111;
     z-index: 10;
 }
 .logo{
@@ -68,7 +68,7 @@ nav{
     font-weight: 500;                          
 }
 .navLinks ul li a:hover{
-    color: var(--red);
+    color: var(--blue);
     transition: 500ms ease;
 }
 #menu_icon{
@@ -563,9 +563,6 @@ max-width: 100%;
 @media (max-width: 965px){
     .product_item{
         width: 100%;
-    }
-    .madamfo{
-        display: none;
     }
     #menu_icon{
         display: block;
