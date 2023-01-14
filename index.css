@@ -246,7 +246,7 @@ nav{
     overflow: hidden;
 }
 .about_img .swiper{
-    width: 400px;
+    width: 100%;
 }
 /* Services */
 .service{
