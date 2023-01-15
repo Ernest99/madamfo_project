@@ -306,6 +306,15 @@ nav{
     background: var(--red);
     cursor: pointer;
 }
+.green_color{
+    background: var(--light-green);
+}
+.blue_color{
+    background: var(--blue);
+}
+.yellow_color{
+    background: var(--yellow);
+}
 .col-m{
 display: flex;
 align-items: center;
