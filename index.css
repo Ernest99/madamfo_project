@@ -328,7 +328,7 @@ max-width: 100%;
 .product{
     width: 100%;
     padding: 20px 0;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .product h2{
     text-align: center;
@@ -414,7 +414,7 @@ max-width: 100%;
     background-attachment: fixed;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin-top: 5%;
+    /* margin-top: 5%; */
     padding: 5% 4%;
 
 }
@@ -470,6 +470,25 @@ max-width: 100%;
  outline: none;
  border: none;
  cursor: pointer;
+}
+.custom_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+}
+.custom_btn a{
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+.custom_btn a:nth-child(1){
+    background: var(--red);
+    color: var(--white);
+}
+.custom_btn a:nth-child(2){
+    background: var(--light-green);
+    color: var(--white);
 }
 .vulunteer{
     width: 100%;
