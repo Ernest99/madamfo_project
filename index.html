@@ -341,7 +341,76 @@
             </div>
         </div>
     </div>
-
+    <section class="blog">
+        <h1>Latest Blog</h1>
+        <div class="blog_container">
+            <div class="blog_item">
+                <span>JANUARY 10, 2023 | <a href="/">HEALTH</a></span>
+                <h4>Health Issues</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit qui repellendus nostrum assumenda accusantium placeat molestias iste aliquid nulla enim odio culpa. Eum.</p>
+                <a href="/" class="blog_btn">Read More</a>
+            </div>
+            <div class="blog_item">
+                <span>JANUARY 10, 2023 | <a href="/">RECYCLING</a></span>
+                <h4>Recycling News</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit qui repellendus nostrum assumenda accusantium placeat molestias iste aliquid nulla enim odio culpa. Eum.</p>
+                <a href="/" class="blog_btn">Read More</a>
+            </div>
+            <div class="blog_item">
+                <span>JANUARY 10, 2023 | <a href="/">INNOVATION</a></span>
+                <h4>Tech News</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit qui repellendus nostrum assumenda accusantium placeat molestias iste aliquid nulla enim odio culpa. Eum.</p>
+                <a href="/" class="blog_btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <div class="newsletter">
+        <div class="newsletter_container">
+            <div>
+                <h1>Subcribe to our newsletter!</h1>
+                <h5>Sign up to receive environmental news and updates!</h5>
+            </div>
+            <div class="email">
+                <input type="email" name="email" placeholder="Your Email">
+                <button>
+                    <i class="bi bi-send"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_l">
+                
+                <a href="/">
+                    <img src="./assets/logo.png" alt="">
+                </a>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, dolorum.</p>
+            </div>
+            <div class="footer_r">
+                <span>Stay connected: </span>
+                <a href="/">
+                    <button>
+                        <i class="bi bi-facebook"></i>
+                    </button>
+                </a>
+                <a href="/">
+                    <button>
+                        <i class="bi bi-instagram"></i>
+                    </button>
+                </a>
+                <a href="/">
+                    <button>
+                        <i class="bi bi-twitter"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p class="copy_right">
+          <span id="year"></span> &copy; Copyright, Madamfo Africa. All Rights Reserved.
+        </p>
+    </footer>
 
 
 
@@ -375,7 +444,10 @@
                 nextEl: '.swiper-button-next',
               },
           });
-          
+        let year = document.getElementById('year');
+        let date = new Date();
+
+        year.innerHTML = date.getFullYear();
     </script>
 </body>
 </html>
