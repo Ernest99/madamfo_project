@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="shortcut icon" href="./assets/madamfo_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
      <!-- typedjs cdn -->
@@ -64,7 +65,7 @@
           <div class="swiper-slide banner_1">
             <div class="banner_content">
                 <div>
-                    <h1>Safety Every Moment,sustainability always in <span class="type"></span></h1>
+                    <h1 data-aos="zoom-in">Safety Every Moment,sustainability always in <span class="type"></span></h1>
                     <h3>Madamfo Africa</h3>
                     <div class="banner_btn">
                         <a href="/">Find Out More</a>
@@ -76,7 +77,7 @@
           <div class="swiper-slide banner_2">
             <div class="banner_content">
                 <div>
-                    <h1>Reducing Impact on the environment,
+                    <h1 data-aos="fade-right">Reducing Impact on the environment,
                         Bridging the gap in emergencies</h1>
                     <h3>Madamfo Africa</h3>
                     <div class="banner_btn">
@@ -89,7 +90,7 @@
           <div class="swiper-slide banner_3">
             <div class="banner_content">
                 <div>
-                    <h1>Over more than 300+First Aid Kits Sold</h1>
+                    <h1 data-aos="fade-left">Over more than 300+First Aid Kits Sold</h1>
                     <h3>Madamfo Africa</h3>
                     <div class="banner_btn">
                         <a href="/">Find Out More</a>
@@ -116,7 +117,7 @@
         <h2><span>Who We</span> Are</h2>
         <div class="service_content">
             <div class="col-l">
-                <div class="service_box_l">
+                <div class="service_box_l" data-aos="fade-up">
                     
                    <div class="service_icon">
                     <i class="bi bi-recycle"></i>
@@ -126,7 +127,7 @@
                     <p>Lorem ipsum dolor, sit amet consectetur</p>
                 </div>
                 </div>
-                <div class="service_box_l">
+                <div class="service_box_l" data-aos="fade-up">
                     
                     <div class="service_icon green_color">
                         <i class="bi bi-heart-pulse"></i>
@@ -141,7 +142,7 @@
                 <img src="./assets/p1_rbg.png" alt="">
             </div> -->
             <div class="col-r">
-                <div class="service_box_r">
+                <div class="service_box_r" data-aos="fade-up">
                     <div class="service_icon blue_color">
                         <i class="bi bi-cpu"></i>
                     </div>
@@ -151,7 +152,7 @@
                     </div>
                     
                 </div>
-                <div class="service_box_r">
+                <div class="service_box_r" data-aos="fade-up">
                     <div class="service_icon yellow_color">
                         <i class="bi bi-megaphone"></i>
                     </div>
@@ -167,13 +168,13 @@
     <section class="about">
         <h1>Welcome To Madamfo Africa</h1>
         <div class="about_container">
-            <div class="about_info">
+            <div class="about_info" data-aos="fade-down">
                 <h2>About Madamfo Africa</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sequi quo dolorum facere pariatur totam ipsum qui provident ea perferendis?</p>
             </div>
             <div class="about_img">
                 <!-- Swiper -->
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper" data-aos="zoom-in-up">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./assets/p2.jpeg" />
@@ -263,10 +264,10 @@
         </div> -->
             <div class="custom_kit">
                 <div class="custom_title">
-                    <h1>Get your customized and refilled first aid kit at Madamfo Africa</h1>
+                    <h1 data-aos="zoom-in">Get your customized and refilled first aid kit at Madamfo Africa</h1>
                     <p>Get a customised first aid kit solution that meets the unique regulations of your business.</p>
                 </div>
-                <div class="custom_form">
+                <div class="custom_form" data-aos="zoom-out-down">
                     <form action="">
                         <div class="form_img">
                             <img src="./assets/madamfo_logo.png" alt="">
@@ -308,7 +309,9 @@
             <h1>Our <span>Team</span></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisi <br> bcaecati hic dicta repudiandae in quas quibusdam ullam, illum sed veniam!</p>
             <div class="team_container">
-                <div class="team_item">
+                <div class="team_item" data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <div class="team_pic">
                         <img src="./assets/person_2.jpg.webp" alt="">
                     </div>
@@ -328,7 +331,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetu enim iusto tempora, adipisci at provident.</p>
                     </div>
                 </div>
-                <div class="team_item">
+                <div class="team_item" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <div class="team_pic">
                         <img src="./assets/person_3.jpg.webp" alt="">
                     </div>
@@ -343,7 +348,7 @@
     </div>
     <section class="blog">
         <h1>Latest Blog</h1>
-        <div class="blog_container">
+        <div class="blog_container" data-aos="fade-down">
             <div class="blog_item">
                 <span>JANUARY 10, 2023 | <a href="/">HEALTH</a></span>
                 <h4>Health Issues</h4>
@@ -417,7 +422,11 @@
     <script src="./index.js"></script>
     <script src="typed.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init({
+            duration: 1200
+        });
      var typed = new Typed(".type", {
         strings: ["RECYCLING", "INNOVATION", "HEALTH", "ADVOCACY"],
         typeSpeed: 100,
