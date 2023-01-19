@@ -114,7 +114,13 @@
     </header>
     
     <section class="service" id="service">
-        <h2><span>Who We</span> Are</h2>
+        <div class="mission">
+            <div class="mission_container">
+                <h1>Mission Statement</h1>
+                <p>Our mission is to offer a product made from recycled waste that enhances safety at all times by facilitating proper response to emergencies and everyday injuries</p>
+            </div>
+        </div>
+        <h2><span>What We</span> Do</h2>
         <div class="service_content">
             <div class="col-l">
                 <div class="service_box_l" data-aos="fade-up">
@@ -124,7 +130,7 @@
                    </div>
                    <div>
                     <h3>Recycling</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur</p>
+                    <p>Madamfo Pa,employs a comprehensive method by incorporating environmental sustainability into our design process. This includes partnering with a recycling company for our products to minimize our ecological footprint while conserving resources."</p>
                 </div>
                 </div>
                 <div class="service_box_l" data-aos="fade-up">
@@ -134,7 +140,7 @@
                     </div>
                     <div>
                         <h3>Health</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur</p>
+                        <p>We are dedicated  to fostering a culture of ongoing first aid training by offering fully stocked kits and ensuring prompt emergency response."</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +154,7 @@
                     </div>
                     <div>
                         <h3>Innovation</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur</p>
+                        <p>Our product design includes integration of a blood pressure monitor and temperature sensor, allowing customers to easily check their vital signs by placing a finger on the device and reading the results on the display.</p>
                     </div>
                     
                 </div>
@@ -158,7 +164,7 @@
                     </div>
                     <div>
                         <h3>Advocacy</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur</p>
+                        <p>Madamfo Pa is  closing the divide by providing education to marginalized members of society through social media campaigns, collaborations with organizations, and promoting volunteerism to expand our reach and disseminate information.</p>
                     </div>
                     
                 </div>
@@ -170,7 +176,7 @@
         <div class="about_container">
             <div class="about_info" data-aos="fade-down">
                 <h2>About Madamfo Africa</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam sequi quo dolorum facere pariatur totam ipsum qui provident ea perferendis?</p>
+                <p>Madamfo Pa, is a team of diverse and versatile individuals, we are dedicated to fostering safety and sustainability in all that we do. We strive to promote health, encourage recycling, drive innovation, and advocate for positive change</p>
             </div>
             <div class="about_img">
                 <!-- Swiper -->
@@ -262,37 +268,17 @@
                 <a href="/"><button class="product_item_btn">Order Now</button></a>
             </div>
         </div> -->
+        
             <div class="custom_kit">
                 <div class="custom_title">
-                    <h1 data-aos="zoom-in">Get your customized and refilled first aid kit at Madamfo Africa</h1>
-                    <p>Get a customised first aid kit solution that meets the unique regulations of your business.</p>
-                    <div class="custom_btn">
+                    <h1 data-aos="zoom-in">Get your customised and refill first aid kit at madamfo Africa</h1>
+                    <div class="custom_btn" data-aos="fade-up">
                             <a href="/">Refill Kit</a>
                             <a href="/">Customize Kit</a>
-                        </div>
+                     </div>
                 </div>
-                <!-- <div class="custom_form" data-aos="zoom-out-down">
-                    <form action="">
-                        <div class="form_img">
-                            <img src="./assets/madamfo_logo.png" alt="">
-                        </div>
-                        <div class="input_first">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Phone" inputmode="tel">    
-                        </div>
-                        <div class="input_first">
-                            <input type="text" placeholder="Address">
-                            <input type="date" placeholder="Date">    
-                        </div>
-                        <div class="input_sec">
-                            <input type="email" placeholder="Email" inputmode="email">
-                        </div>
-                        <div class="custom_btn">
-                            <a href="/"><button>Book Now</button></a>
-                        </div>
-                        
-                    </form>
-                </div> -->
+
+   
             </div>
     </section>
     <div class="vulunteer">
@@ -393,6 +379,14 @@
                 </a>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, dolorum.</p>
             </div>
+            <div class="footer_m">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>Address: Akamanje street</li>
+                    <li>Phone: <a href="tel:0552171189">0552171189</a></li>
+                    <li>Email: <a href="mailto:madamfoafrika@gmail.com">madamfoafrica@gmail.com</a> </li>
+                </ul>
+            </div>
             <div class="footer_r">
                 <span>Stay connected: </span>
                 <a href="/">
@@ -434,6 +428,18 @@
         backSpeed: 100,
         loop: true
      }); 
+     var swiper = new Swiper(".mySwiper", {
+        speed: 600,
+        parallax: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
         var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         effect: "fade",
@@ -454,10 +460,12 @@
                 nextEl: '.swiper-button-next',
               },
           });
+          
         let year = document.getElementById('year');
         let date = new Date();
 
         year.innerHTML = date.getFullYear();
+        
     </script>
 </body>
 </html>
