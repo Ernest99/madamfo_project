@@ -229,6 +229,10 @@ nav{
     padding: 2% 0;
     font-size: 2rem;
 }
+.mission_container p{
+    font-weight: 600;
+    line-height: 1.8;
+}
 /* about */
 .about{
     padding: 2% 4%;
