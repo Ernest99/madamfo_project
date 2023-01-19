@@ -306,6 +306,7 @@ nav{
 .service_box_l p, .service_box_r p{
     font-size: 13px;
     padding-top: 10px;
+    font-weight: 500;
 }
 .service_box_l i{
     font-size: 1.8rem;
