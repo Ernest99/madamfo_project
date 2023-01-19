@@ -251,7 +251,7 @@ nav{
 .about h1{
     text-align: center;
     padding-bottom: 2%;
-    color: var(--blue);
+    color: var(--white);
 }
 .about_info{
     text-align: center;
@@ -769,7 +769,7 @@ hr{
     padding: 10px 0;
 }
 .footer_m li{
-    font-size: 13px;
+    font-size: 15px;
     padding: 8px 0;
 }
 .footer_m ul li a{
