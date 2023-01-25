@@ -74,7 +74,7 @@ nav{
     color: var(--blue);
     transition: 500ms ease;
 }
-#menu_icon{
+.menu_icon{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -82,7 +82,7 @@ nav{
     outline: none;
     display: none;
 }
-#menu_icon i{
+.menu_icon i{
     font-size: 25px;
     font-weight: 600;
 }
@@ -794,7 +794,7 @@ hr{
     .blog_item{
         width: 100%;
     }
-    #menu_icon{
+    .menu_icon{
         display: block;
     }
     .navLinks{

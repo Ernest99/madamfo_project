@@ -47,7 +47,7 @@
                         <img src="./assets/logo.png" alt="madamfo logo">
                     </a>
                 </div>
-                <div class="navLinks" id="nav_link">
+                <div class="navLinks nav_link">
                     <ul>
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -57,7 +57,7 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <button id="menu_icon"><i class="bi bi-list" id="hum_menu"></i></button>
+                <button class="menu_icon"><i class="bi bi-list hum_menu"></i></button>
             </nav>
         </header>
         <div class="about_banner">
@@ -163,7 +163,7 @@
               <span id="year"></span> &copy; Copyright, Madamfo Africa. All Rights Reserved.
             </p>
         </footer>
-        <script src="./index.js"></script>
+        <!-- <script src="./index.js"></script> -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init({
@@ -173,6 +173,14 @@
         let date = new Date();
 
         year.innerHTML = date.getFullYear();
+        let menu_bar = document.querySelector('.menu_icon');
+let humburger = document.querySelector('.hum_menu');
+let nav_menu = document.querySelector('.nav_link');
+
+menu_bar.onclick = () =>{
+    humburger.classList.toggle('bi-x');
+    nav_menu.classList.toggle('show_menu');
+}
         </script>
 </body>
 </html>
