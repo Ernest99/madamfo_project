@@ -9,6 +9,25 @@
     list-style: none;
     font-family: 'Montserrat', sans-serif;
 }
+/* Back to top */
+#toTop{
+    position: fixed;
+    right: -45px;
+    bottom: 50px;
+    background: var(--light-green);
+    color: var(--white);
+    width: 35px;
+    height: 35px;
+    z-index: 99;
+    border-radius: 50%;
+    border: none;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+.showTop{
+    right: 25px !important;
+    transition: 500ms ease;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -722,7 +741,7 @@ footer{
     width: 100%;
     background: #111;
     padding: 2% 4%;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 .footer_l p{
     width: 300px;

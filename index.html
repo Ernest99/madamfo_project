@@ -34,6 +34,10 @@
      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+    <!-- back to top -->
+    <button id="toTop">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
     <!-- Navigation -->
     <header>
         <nav>
@@ -411,6 +415,7 @@
           <span id="year"></span> &copy; Copyright, Madamfo Africa. All Rights Reserved.
         </p>
     </footer>
+  
 
 
 
@@ -462,6 +467,21 @@ menu_bar.onclick = () =>{
     nav_menu.classList.toggle('show_menu');
     
 }
+// back to top
+var back_to_top = document.getElementById('toTop');
+window.addEventListener('scroll', function(){
+    if(window.pageYOffset > 150){
+        back_to_top.classList.add('showTop');
+    }else{
+        back_to_top.classList.remove('showTop');
+    }
+});
+
+var back_to_top = document.getElementById('toTop');
+back_to_top.addEventListener('click', function() {
+    window.scrollTo(0, 0);
+});
+
     </script>
 </body>
 </html>
