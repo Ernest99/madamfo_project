@@ -16,13 +16,16 @@
     bottom: 50px;
     background: var(--light-green);
     color: var(--white);
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     z-index: 99;
     border-radius: 50%;
     border: none;
     transition: 500ms ease;
     cursor: pointer;
+}
+#toTop i{
+    font-size: 1.5rem;
 }
 .showTop{
     right: 25px !important;
@@ -560,6 +563,7 @@ max-width: 100%;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -850,4 +854,12 @@ hr{
     .email{
         width: 100%;
     }
+    
+}
+@media (max-width: 469px){
+    .vul_content h2{
+        font-size: 1.3rem;
+
+    }
+    
 }
