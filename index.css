@@ -14,7 +14,7 @@
     position: fixed;
     right: -45px;
     bottom: 50px;
-    background: linear-gradient(to right, #e380c0b6,#f28fa19c,#e089aa96,#e380c0a6);
+    background: #B886CE;
     color: var(--white);
     width: 45px;
     height: 45px;
@@ -58,7 +58,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    background: linear-gradient(to right, #E380C0,#F28FA1,#E089AB,#E380C0);
+    background: linear-gradient(to right, #c189da,#F28FA1);
+    /* background: #c189da; */
     z-index: 10;
 }
 .logo{
@@ -124,7 +125,7 @@ nav{
    
 }
 .type{
-    color: var(--yellow);
+    color: #B886CE;
 }
 /* Swiper Js */
 .swiper {
@@ -511,12 +512,12 @@ max-width: 100%;
     border-radius: 30px;
 }
 .custom_btn a:nth-child(1){
-    background: var(--red);
+    background: #B886CE;
     color: var(--white);
 }
 .custom_btn a:nth-child(2){
-    background: var(--light-green);
-    color: var(--white);
+    background: var(--white);
+    color: #B886CE;
 }
 /* custom_swiper */
   .parallax-bg {
@@ -582,7 +583,7 @@ max-width: 100%;
 }
 .vul_btn a{
     padding: 10px 15px;
-    background: var(--blue);
+    background: #B886CE;
     color: var(--white);
     border-radius: 30px;
     font-size: 14px;
@@ -682,7 +683,7 @@ max-width: 100%;
 }
 .blog_item span{
     font-size: 10px;
-    color: #E07CBC;
+    color: #B886CE;
     font-weight: 600;
     padding: 15px 0;
 }
@@ -699,8 +700,7 @@ max-width: 100%;
 }
 .blog_btn{
     padding: 5px 10px;
-    background: linear-gradient(to right, #e380c0b6,#f28fa19c,#e089aa96,#e380c0a6)
-    ;
+    background: linear-gradient(to right, #c189da,#F28FA1);
     color: var(--white);
     border: none;
     outline: none;
@@ -800,7 +800,7 @@ hr{
     padding: 8px 0;
 }
 .footer_m ul li a{
-    color: #E07CBC;
+    color: #B886CE;
     transition: 500ms ease;
 }
 .footer_m ul li a:hover{
