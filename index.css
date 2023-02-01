@@ -58,7 +58,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    background: #111;
+    background: linear-gradient(to right, #E380C0,#F28FA1,#E089AB,#E380C0);
     z-index: 10;
 }
 .logo{
@@ -87,7 +87,7 @@ nav{
     margin-left: 8px;
 }
 .navLinks ul li a{
-    color: var(--green);
+    color: var(--white);
     font-size: 15px;
     transition: 500ms ease;   
     font-weight: 500;                          

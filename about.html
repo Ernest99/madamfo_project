@@ -35,6 +35,11 @@
     <link rel="stylesheet" href="./about.css">
 </head>
 <body>
+    <!-- back to top -->
+    <button id="toTop">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+    </button>
+    <!-- Navigation -->
         <!-- Navigation -->
         <header>
             <nav>
@@ -50,8 +55,7 @@
                 <div class="navLinks nav_link">
                     <ul>
                         <li><a href="/index.html">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Service</a></li>
+                        <li><a href="./about.html">About</a></li>
                         <li><a href="#">Product</a></li>
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Contact</a></li>
@@ -165,7 +169,7 @@
         </footer>
         <!-- <script src="./index.js"></script> -->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
+<script>
             AOS.init({
                 duration: 1200
             });
@@ -181,6 +185,20 @@ menu_bar.onclick = () =>{
     humburger.classList.toggle('bi-x');
     nav_menu.classList.toggle('show_menu');
 }
-        </script>
+// back to top
+var back_to_top = document.getElementById('toTop');
+window.addEventListener('scroll', function(){
+    if(window.pageYOffset > 150){
+        back_to_top.classList.add('showTop');
+    }else{
+        back_to_top.classList.remove('showTop');
+    }
+});
+
+var back_to_top = document.getElementById('toTop');
+back_to_top.addEventListener('click', function() {
+    window.scrollTo(0, 0);
+});
+</script>
 </body>
 </html>
