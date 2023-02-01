@@ -251,6 +251,7 @@ nav{
     text-align: center;
     padding: 2% 0;
     font-size: 2rem;
+    color: #0C6B7C;
 }
 .mission_container p{
     font-weight: 600;
@@ -307,10 +308,10 @@ nav{
     padding-bottom: 15px;
     margin-top: 18px;
     margin-bottom: 20px;
-    color: var(--white);
+    color: #0C6B7C;
 }
 .service h2 span{
-    color: var(--white);
+    color: #0C6B7C;
 }
 .service_content{
     display: grid;
