@@ -256,6 +256,7 @@ nav{
 .mission_container p{
     font-weight: 600;
     line-height: 1.8;
+    color: #0C6B7C;
 }
 /* about */
 .about{
@@ -332,6 +333,7 @@ nav{
     font-size: 13px;
     padding-top: 10px;
     font-weight: 500;
+    color: #0C6B7C;
 }
 .service_box_l i{
     font-size: 1.8rem;
@@ -606,6 +608,7 @@ max-width: 100%;
 .team p{
     text-align: center;
     margin: 2% 0;
+    color: #0C6B7C;
 }
 .team span{
     color: #E07CBC;
@@ -642,6 +645,7 @@ max-width: 100%;
 }
 .team_profile p{
     font-size: 15px;
+    color: #0C6B7C;
 }
 .team_pic{
     width: 100px;
@@ -695,6 +699,7 @@ max-width: 100%;
 .blog_item p{
     font-size: 12px;
     padding: 15px 0;
+    color: #0C6B7C;
 }
 .blog_item h4{
     padding-top: 10px;
@@ -727,6 +732,7 @@ max-width: 100%;
 }
 .newsletter_container div h5{
     font-size: 10px;
+    color: #0C6B7C;
 }
 .newsletter_container .email input{
     width: 50%;
